@@ -1,0 +1,139 @@
+html { 
+    font-size: 62.5%;
+}
+    
+body {
+    font-family: 'Marcellus', 'Noto Serif JP', sans-serif;
+}
+
+/* ヘッダー */
+/* SP記述 */
+@media screen and (max-width: 767px) {
+    .header {
+        height: 70px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0); 
+        z-index: 100;
+    }
+    .header__logo {
+        padding-top: 24px;
+    }
+    .header__logo img {
+        height: 30px;
+        width: 143px;
+    }
+}
+
+/* カバー */
+/* SP記述 */
+@media screen and (max-width: 767px) {
+    .cover {
+        position: relative;
+        z-index: 1;
+    }
+    .cover__img img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+}
+
+/* カバー タイトル */
+/* SP記述 */
+@media screen and (max-width: 767px) {
+    .cover__title {
+        height: 180px;
+        max-width: 390px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 107.5% 0 0 6%;
+        z-index: 100;
+    }
+    .cover__title--text {
+        letter-spacing: 0.3em;
+        line-height: 50px;
+        font-size: 4.1rem;
+        color: #000000;
+    }
+    .cover__title--sub {
+        letter-spacing: 0.3em;
+        padding-top: 14px;
+        font-size: 2rem;
+        color: #000000;
+    }
+}
+
+
+/* ヘッダー */
+/* PC記述 */
+@media screen and (min-width: 768px) {
+    .header {
+        height: 100px;
+        max-width: 1500px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0); 
+        z-index: 100;
+    }
+    .header__logo {
+        padding-top: 32px;
+    }
+    .header__logo img {
+        height: 35px;
+        width: 166px;
+    }
+}
+
+/* カバー */
+/* PC記述 */
+@media screen and (min-width: 768px) {
+    .cover {
+        position: relative;
+        z-index: 1;
+    }
+    .cover__img img {
+        height: auto;
+        max-width: 1500px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* カバー タイトル */
+/* PC記述 */
+@media screen and (min-width: 768px) {
+    .cover__title {
+        height: 500px;
+        max-width: 1200px;
+        position: relative;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 270px 0 0 74.5px;
+        z-index: 100;
+    }
+    .cover__title--text {
+        letter-spacing: 0.3em;
+        line-height: 68px;
+        font-size: 5rem;
+        color: #000000;
+    }
+    .cover__title--sub {
+        letter-spacing: 0.3em;
+        padding-top: 14px;
+        font-size: 2.5rem;
+        color: #000000;
+    }
+}

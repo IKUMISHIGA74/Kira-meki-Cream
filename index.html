@@ -10,12 +10,34 @@
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://example.com/WebsitePractice/Kira-meki Cream/index.html">
         <meta property="site_name" content="Kira-meki">
+        <!-- <meta property="og:image" content=""> -->
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"><!-- リセットCSS -->
-        <link rel="stylesheet" href="assets/script/main.css">
+        <link rel="stylesheet" href="assets/style/main.css">
     </head>
 </html>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <h1 class="header__logo">
+            <img src="assets/image/logo_01.png" alt="Kira-meki" >
+        </h1>
+    </header>
+
+    <!-- カバー -->
+    <div class="cover">
+        <picture class="cover__img">
+            <source srcset="assets/image/cover_01.jpg" media="(max-width: 767px)"/><!-- SP表示 -->
+            <img src="assets/image/cover_02.jpg" alt="" /><!-- PC表示 -->
+        </picture>
+        <!-- カバー タイトル -->
+        <div class="cover__title">
+            <h2 class="cover__title--text">Kirameki</h2>
+            <h2 class="cover__title--text">Cream</h2>
+            <p class="cover__title--sub">肌のうるおい、煌めく。</p>
+        </div>
+    </div>
