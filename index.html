@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"><!-- リセットCSS -->
         <link rel="stylesheet" href="assets/style/main.css">
     </head>
-</html>
+    <body>
 
     <!-- ヘッダー -->
     <header class="header">
@@ -31,8 +31,8 @@
     <!-- カバー -->
     <div class="cover">
         <picture class="cover__img">
-            <source srcset="assets/image/cover_01.jpg" media="(max-width: 767px)"/><!-- SP表示 -->
-            <img src="assets/image/cover_02.jpg" alt="" /><!-- PC表示 -->
+            <source srcset="assets/image/cover_01.jpg" media="(max-width: 767px)"><!-- SP表示 -->
+            <img src="assets/image/cover_02.jpg" alt=""><!-- PC表示 -->
         </picture>
         <!-- カバー タイトル -->
         <div class="cover__title">
@@ -41,3 +41,22 @@
             <p class="cover__title--sub">肌のうるおい、煌めく。</p>
         </div>
     </div>
+
+    <!-- 購入バナー -->
+    <div class="banner">
+        <div class="banner__text">
+            <p class="banner__text--first">キラメキクリーム</p>
+            <p class="banner__text--secound">税込 4,000円</p>
+        </div>
+        <ul class="banner__btn">
+            <li>
+                <button type="button" class="btn btn-outline-shop btn__banner--shop">オンラインショップへ</button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-outline-buy btn__banner--buy">購入する</button>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

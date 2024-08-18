@@ -33,6 +33,9 @@ body {
 /* SP記述 */
 @media screen and (max-width: 767px) {
     .cover {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 390/ 450;
         position: relative;
         z-index: 1;
     }
@@ -98,12 +101,17 @@ body {
 /* PC記述 */
 @media screen and (min-width: 768px) {
     .cover {
+        height: 720px;
+        width: 100%;
+        max-width: 1500px;
+        left: 50%;
+        transform: translateX(-50%);
         position: relative;
         z-index: 1;
     }
     .cover__img img {
-        height: auto;
-        max-width: 1500px;
+        object-fit: cover;
+        object-position: center;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -135,5 +143,145 @@ body {
         padding-top: 14px;
         font-size: 2.5rem;
         color: #000000;
+    }
+}
+
+/* 購入バナー */
+/* SP記述 1079px以下 */
+@media screen and (max-width: 1079px) {
+    .banner {
+        height: 261px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 157px 4% 0% 4%;
+        background-color: #F0F4FF;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1079px) {
+    .banner {
+        margin: 50px 4% 0% 4%;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .banner__text {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner__text--first {
+        padding-top: 25px;
+        letter-spacing: 0.1em;
+        font-size: 1.8rem;
+        color: #000000;
+    }
+    .banner__text--secound {
+        font-family: 'Noto Serif JP', sans-serif;/* フォント上書き */
+        padding: 8px 0 0 2px;
+        letter-spacing: 0.13em;
+        font-size: 1.4rem;
+        color: #111111;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .btn__banner--shop {
+        height: 58px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        margin-top: 20px;
+        padding-top: 5px;
+        background-color: #46C4DB;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.8rem;
+    }
+    .btn__banner--buy {
+        height: 58px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        margin-top: 20px;
+        padding-top: 5px;
+        background-color: #5DD5AB;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.8rem;
+    }
+}
+
+/* 購入バナー */
+/* PC記述 1080px以上 */
+@media screen and (min-width: 1080px) {
+    .banner {
+        height: 146px;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 48px auto 0% auto;
+        background-color: #F0F4FF;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .banner__text {
+        width: 260px;
+    }
+    .banner__text--first {
+        margin:5px 0 9px 47px;
+        letter-spacing: 0.1em;
+        font-size: 2.4rem;
+        color: #000000;
+    }
+    .banner__text--secound {
+        font-family: 'Noto Serif JP', sans-serif;/* フォント上書き */
+        margin-left:47px;
+        letter-spacing: 0.11em;
+        font-size: 1.6rem;
+        color: #111111;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .banner__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn__banner--shop {
+        height: 58px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        margin-right: 34px;
+        padding-top: 5px;
+        background-color: #46C4DB;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.8rem;
+    }
+    .btn__banner--buy {
+        height: 58px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        margin-right: 47px;
+        padding-top: 5px;
+        background-color: #5DD5AB;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.8rem;
     }
 }
