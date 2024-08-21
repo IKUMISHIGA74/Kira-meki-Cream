@@ -59,15 +59,22 @@ body {
         padding: 107.5% 0 0 6%;
         z-index: 100;
     }
-    .cover__title--text {
+    .cover__title--first {
         letter-spacing: 0.3em;
-        line-height: 50px;
+        line-height: 1.2;
+        font-size: 4.1rem;
+        color: #000000;
+    }
+    .cover__title--second {
+        display: block;
+        letter-spacing: 0.3em;
+        line-height: 1.3;
         font-size: 4.1rem;
         color: #000000;
     }
     .cover__title--sub {
         letter-spacing: 0.3em;
-        padding-top: 14px;
+        padding-top: 10px;
         font-size: 2rem;
         color: #000000;
     }
@@ -132,9 +139,16 @@ body {
         padding: 270px 0 0 74.5px;
         z-index: 100;
     }
-    .cover__title--text {
+    .cover__title--first {
         letter-spacing: 0.3em;
-        line-height: 68px;
+        line-height: 1.4;
+        font-size: 5rem;
+        color: #000000;
+    }
+    .cover__title--second {
+        display: block;
+        letter-spacing: 0.3em;
+        line-height: 1.3;
         font-size: 5rem;
         color: #000000;
     }
@@ -147,8 +161,8 @@ body {
 }
 
 /* 購入バナー */
-/* SP記述 1079px以下 */
-@media screen and (max-width: 1079px) {
+/* SP記述 1023px以下 */
+@media screen and (max-width: 1023px) {
     .banner {
         height: 261px;
         display: flex;
@@ -158,13 +172,13 @@ body {
         background-color: #F0F4FF;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1079px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .banner {
         margin: 50px 4% 0% 4%;
     }
 }
 
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 1023px) {
     .banner__text {
         width: 200px;
         display: flex;
@@ -177,16 +191,17 @@ body {
         font-size: 1.8rem;
         color: #000000;
     }
-    .banner__text--secound {
+    .banner__text--second {
         font-family: 'Noto Serif JP', sans-serif;/* フォント上書き */
-        padding: 8px 0 0 2px;
-        letter-spacing: 0.13em;
+        display: block;
+        padding: 7px 0 0 33px;
+        letter-spacing: 0.11em;
         font-size: 1.4rem;
         color: #111111;
     }
 }
 
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 1023px) {
     .btn__banner--shop {
         height: 58px;
         width: 300px;
@@ -194,13 +209,22 @@ body {
         justify-content: center;
         align-items: center;
         border-radius: 30px;
-        margin-top: 20px;
+        margin-top: 22px;
         padding-top: 5px;
         background-color: #46C4DB;
+        border: 2px solid #46C4DB;
         text-decoration: none;
         color: #FFFFFF;
         font-size: 1.8rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
+    .btn__banner--shop:hover {
+        background-color: #FFFFFF;
+        color: #46C4DB;
+    }
+}
+
+    @media screen and (max-width: 1023px) {
     .btn__banner--buy {
         height: 58px;
         width: 300px;
@@ -211,15 +235,21 @@ body {
         margin-top: 20px;
         padding-top: 5px;
         background-color: #5DD5AB;
+        border: 2px solid #5DD5AB;
         text-decoration: none;
         color: #FFFFFF;
         font-size: 1.8rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn__banner--buy:hover {
+        background-color: #FFFFFF;
+        color: #5DD5AB;
     }
 }
 
 /* 購入バナー */
-/* PC記述 1080px以上 */
-@media screen and (min-width: 1080px) {
+/* PC記述 1024px以上 */
+@media screen and (min-width: 1024px) {
     .banner {
         height: 146px;
         max-width: 1000px;
@@ -231,26 +261,27 @@ body {
     }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
     .banner__text {
         width: 260px;
     }
     .banner__text--first {
-        margin:5px 0 9px 47px;
+        margin:15px 0 0 47px;
         letter-spacing: 0.1em;
         font-size: 2.4rem;
         color: #000000;
     }
-    .banner__text--secound {
+    .banner__text--second {
         font-family: 'Noto Serif JP', sans-serif;/* フォント上書き */
-        margin-left:47px;
+        display: block;
+        line-height: 2.5;
         letter-spacing: 0.11em;
         font-size: 1.6rem;
         color: #111111;
     }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
     .banner__btn {
         display: flex;
         justify-content: center;
@@ -266,10 +297,19 @@ body {
         margin-right: 34px;
         padding-top: 5px;
         background-color: #46C4DB;
+        border: 2px solid #46C4DB;
         text-decoration: none;
         color: #FFFFFF;
         font-size: 1.8rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
+    .btn__banner--shop:hover {
+        background-color: #FFFFFF;
+        color: #46C4DB;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .btn__banner--buy {
         height: 58px;
         width: 300px;
@@ -280,8 +320,131 @@ body {
         margin-right: 47px;
         padding-top: 5px;
         background-color: #5DD5AB;
+        border: 2px solid #5DD5AB;
         text-decoration: none;
         color: #FFFFFF;
         font-size: 1.8rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn__banner--buy:hover {
+        background-color: #FFFFFF;
+        color: #5DD5AB;
     }
 }
+
+/* 商品説明 */
+/* SP記述 */
+@media screen and (max-width: 767px) {
+    .explanation {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        aspect-ratio: 390/ 680;
+        position: relative;
+    }
+    .explanation__img img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .explanation__text {
+        height: 300px;
+        max-width: 390px;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 13% 4% 0 4%;
+    }
+    .explanation__text--first {
+        font-family: 'EB Garamond', sans-serif;/* フォント上書き */
+        padding-left: 4%;
+        font-size: 3rem;
+        color: #FFFFFF;
+    }
+    .explanation__text--second {
+        font-family: 'Noto Serif JP', sans-serif;/* フォント上書き */
+        display: block;
+        line-height: 2.3;
+        padding-left: 20%;
+        font-size: 2.4rem;
+        color: #FFFFFF;
+    }
+    .explanation__text--p {
+        line-height: 2.3;
+        padding-top: 5px;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+    }
+}
+
+/* SP記述 389px以下 */
+@media screen and (max-width: 389px) {
+    .explanation__text {
+        height: 300px;
+        max-width: 390px;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 13% 2% 0 2%;
+    }
+}
+
+/* カバー */
+/* PC記述 */
+@media screen and (min-width: 768px) {
+    .explanation {
+        height: 720px;
+        width: 100%;
+        max-width: 1500px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 48px;
+        position: relative;
+    }
+    .explanation__img img {
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* カバー タイトル */
+/* PC記述 */
+@media screen and (min-width: 768px) {
+    .explanation__text {
+        height: 500px;
+        max-width: 1200px;
+        position: relative;
+        margin: auto;
+        padding-top: 130px;
+        padding-left: 45.2%;
+    }
+    .explanation__text--first {
+        font-family: 'EB Garamond', sans-serif;/* フォント上書き */
+        font-size: 3.8rem;
+        color: #FFFFFF;
+    }
+    .explanation__text--second {
+        font-family: 'Noto Serif JP', sans-serif;/* フォント上書き */
+        display: block;
+        line-height: 2.2;
+        font-size: 2.4rem;
+        color: #FFFFFF;
+    }
+    .explanation__text--p {
+        max-width: 429px;
+        line-height: 2.3;
+        padding-top: 10px;
+        padding-right: 2%;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+    }
+}
+

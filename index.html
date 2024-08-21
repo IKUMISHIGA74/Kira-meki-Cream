@@ -10,7 +10,6 @@
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://example.com/WebsitePractice/Kira-meki Cream/index.html">
         <meta property="site_name" content="Kira-meki">
-        <!-- <meta property="og:image" content=""> -->
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
@@ -36,8 +35,7 @@
         </picture>
         <!-- カバー タイトル -->
         <div class="cover__title">
-            <h2 class="cover__title--text">Kirameki</h2>
-            <h2 class="cover__title--text">Cream</h2>
+            <h2 class="cover__title--first">Kirameki<span class="cover__title--second">Cream</span></h2>
             <p class="cover__title--sub">肌のうるおい、煌めく。</p>
         </div>
     </div>
@@ -45,18 +43,31 @@
     <!-- 購入バナー -->
     <div class="banner">
         <div class="banner__text">
-            <p class="banner__text--first">キラメキクリーム</p>
-            <p class="banner__text--secound">税込 4,000円</p>
+            <p class="banner__text--first">キラメキクリーム<span class="banner__text--second">税込 4,000円</span></p>
         </div>
         <ul class="banner__btn">
             <li>
-                <button type="button" class="btn btn-outline-shop btn__banner--shop">オンラインショップへ</button>
+                <a class="btn btn__banner--shop" href="#" role="button">オンラインショップへ</a>
             </li>
             <li>
-                <button type="button" class="btn btn-outline-buy btn__banner--buy">購入する</button>
+                <a class="btn btn__banner--buy" href="#" role="button">購入する</a>
             </li>
         </ul>
     </div>
 
-</body>
+    <!-- コンテンツ1 商品解説 -->
+    <div class="explanation">
+        <picture class="explanation__img">
+            <source srcset="assets/image/content_01.png" media="(max-width: 767px)"><!-- SP表示 -->
+            <img src="assets/image/content_02.png" alt=""><!-- PC表示 -->
+        </picture>
+        <!-- コンテンツ1 テキスト -->
+        <div class="explanation__text">
+            <h3 class="explanation__text--first">Keep Your Skin Beautiful.<span class="explanation__text--second">お肌を美しく保つ</span></h3>
+            <p class="explanation__text--p">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+        </div>
+    </div>
+
+
+    </body>
 </html>
