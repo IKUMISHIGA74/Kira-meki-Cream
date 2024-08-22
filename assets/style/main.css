@@ -332,6 +332,7 @@ body {
     }
 }
 
+
 /* 商品説明 */
 /* SP記述 */
 @media screen and (max-width: 767px) {
@@ -394,7 +395,7 @@ body {
     }
 }
 
-/* カバー */
+/* 商品説明 */
 /* PC記述 */
 @media screen and (min-width: 768px) {
     .explanation {
@@ -415,8 +416,6 @@ body {
     }
 }
 
-/* カバー タイトル */
-/* PC記述 */
 @media screen and (min-width: 768px) {
     .explanation__text {
         height: 500px;
