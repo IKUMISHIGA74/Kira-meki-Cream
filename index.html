@@ -10,14 +10,11 @@
         <meta property="og:type" content="article">
         <meta property="og:url" content="https://example.com/WebsitePractice/Kira-meki Cream/index.html">
         <meta property="site_name" content="Kira-meki">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet"><!-- Google font -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"><!-- リセットCSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css"><!-- slickのCSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"><!-- slickのCSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!-- Font Awesome -->
         <link rel="stylesheet" href="assets/style/main.css">
     </head>
     <body>
@@ -37,24 +34,29 @@
         </picture>
         <!-- カバー タイトル -->
         <div class="cover__title">
-            <h2 class="cover__title--first">Kirameki<span class="cover__title--second">Cream</span></h2>
-            <p class="cover__title--sub">肌のうるおい、煌めく。</p>
+            <h2 class="cover__title-first">Kirameki<span class="cover__title-second">Cream</span></h2>
+            <p class="cover__title-sub">肌のうるおい、煌めく。</p>
         </div>
     </div>
 
-    <!-- 購入バナー -->
-    <div class="banner">
+    <!-- 購入バナー1 -->
+    <div class="banner__first">
         <div class="banner__text">
-            <p class="banner__text--first">キラメキクリーム<span class="banner__text--second">税込 4,000円</span></p>
+            <p class="banner__text-first">キラメキクリーム<span class="banner__text-second">税込 4,000円</span></p>
         </div>
         <ul class="banner__btn">
             <li>
-                <a class="btn btn__banner--shop" href="#" role="button">オンラインショップへ</a>
+                <form action="/cart/" method="get">
+                    <button type="submit" class="btn btn__banner--shop">オンラインショップへ</button>
+                </form>
             </li>
             <li>
-                <a class="btn btn__banner--buy" href="#" role="button">購入する</a>
+                <form action="/cart/" method="get">
+                    <button type="submit" class="btn btn__banner--buy">購入する</button>
+                </form>
             </li>
         </ul>
+        
     </div>
 
     <!-- コンテンツ1 商品解説 -->
@@ -65,15 +67,15 @@
         </picture>
         <!-- コンテンツ1 テキスト -->
         <div class="explanation__text">
-            <h3 class="explanation__text--first">Keep Your Skin Beautiful.<span class="explanation__text--second">お肌を美しく保つ</span></h3>
-            <p class="explanation__text--p">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+            <h3 class="explanation__text-first">Keep Your Skin Beautiful.<span class="explanation__text-second">お肌を美しく保つ</span></h3>
+            <p class="explanation__text-p">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
         </div>
     </div>
 
     <!-- コンテンツ2 お客様の声 -->
     <div class="voice">
         <div class="voice__title">
-            <h3 class="voice__title--first">Voices<span class="voice__title--second">お客様の声</span></h3>
+            <h3 class="voice__title-first">Voices<span class="voice__title-second">お客様の声</span></h3>
         </div>
         <ul class="voice__list">
             <li class="voice__list--item">
@@ -91,8 +93,133 @@
                 <p class="voice__list--name">Cさん</p>
                 <p class="voice__list--text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
             </li>
+            <li class="voice__list--item">
+                <img src="assets/image/icon_04.png" alt="">
+                <p class="voice__list--name">Dさん</p>
+                <p class="voice__list--text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+            </li>
+            <li class="voice__list--item">
+                <img src="assets/image/icon_05.png" alt="">
+                <p class="voice__list--name">Eさん</p>
+                <p class="voice__list--text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+            </li>
+            <li class="voice__list--item">
+                <img src="assets/image/icon_06.png" alt="">
+                <p class="voice__list--name">Fさん</p>
+                <p class="voice__list--text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+            </li>
         </ul>
     </div>
+
+    <!-- コンテンツ3 よくあるご質問 -->
+    <div class="faq">
+        <div class="faq__title">
+            <h3 class="faq__title-first">Q&A</h3><span class="faq__title-second">よくあるご質問</span>
+        </div>
+        <div class="faq__list">
+            <div class="faq__list--question">
+                <p class="question"><span class="question__label">Q.</span></p>
+                <p class="question__text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <i class="fas fa-caret-up icon-size"></i>
+            </div>
+            <div class="faq__list--answer">
+                <p class="answer"><span class="answer__label">A.</span></p>
+                <p class="answer__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </div>
+        </div>
+        <div class="faq__list">
+            <div class="faq__list--question">
+                <p class="question"><span class="question__label">Q.</span></p>
+                <p class="question__text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <i class="fas fa-caret-up icon-size"></i>
+            </div>
+            <div class="faq__list--answer">
+                <p class="answer"><span class="answer__label">A.</span></p>
+                <p class="answer__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </div>
+        </div>
+
+        <div class="faq__list">
+            <div class="faq__list--question">
+                <p class="question"><span class="question__label">Q.</span></p>
+                <p class="question__text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <i class="fas fa-caret-up icon-size"></i>
+            </div>
+            <div class="faq__list--answer">
+                <p class="answer"><span class="answer__label">A.</span></p>
+                <p class="answer__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </div>
+        </div>
+        <div class="faq__list">
+            <div class="faq__list--question">
+                <p class="question"><span class="question__label">Q.</span></p>
+                <p class="question__text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <i class="fas fa-caret-up icon-size"></i>
+            </div>
+            <div class="faq__list--answer">
+                <p class="answer"><span class="answer__label">A.</span></p>
+                <p class="answer__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </div>
+        </div>
+        <div class="faq__list">
+            <div class="faq__list--question">
+                <p class="question"><span class="question__label">Q.</span></p>
+                <p class="question__text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                <i class="fas fa-caret-up icon-size"></i>
+            </div>
+            <div class="faq__list--answer">
+                <p class="answer"><span class="answer__label">A.</span></p>
+                <p class="answer__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 購入バナー2 -->
+    <div class="banner__second">
+        <div class="banner__text">
+            <p class="banner__text-first">キラメキクリーム<span class="banner__text-second">税込 4,000円</span></p>
+        </div>
+        <ul class="banner__btn">
+            <li>
+                <form action="/cart/" method="get">
+                    <button type="submit" class="btn btn__banner--shop">オンラインショップへ</button>
+                </form>
+            </li>
+            <li>
+                <form action="/cart/" method="get">
+                    <button type="submit" class="btn btn__banner--buy">購入する</button>
+                </form>
+            </li>
+        </ul>
+        
+    </div>
+
+    <!-- 上に遷移 -->
+    <div class="arrow"><a href="#">
+        <div class="arrow__icon">
+            <span class="arrow__icon--up"></span>
+        </div>
+    </a>
+    </div>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer__content">
+            <img src="assets/image/logo_02.png" alt="Kira-meki" >
+            <ul class="footer__content--list">
+                <li>
+                    <a href="/company/">会社概要</a>
+                </li>
+                <li>
+                    <a href="/privacy-policy/">個人情報保護ポリシー</a>
+                </li>
+                <li>
+                    <a href="/contact/">お問い合わせ</a>
+                </li>
+            </ul>
+            <p class="footer__text">© 2023 Kira-meki Inc. All rights reserved.</p>
+        </div>
+    </footer>
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!-- slick -->
