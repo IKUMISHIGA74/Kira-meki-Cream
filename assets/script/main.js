@@ -54,13 +54,14 @@ $('.faq__list').each(function() {
     $faqSection.find('.faq__list--question').next().hide();
     $faqSection.find('.faq__list--question').click(function() {
         $faqSection.find('.faq__list--question').not(this).next().slideUp();
-        $faqSection.find('.faq__list--question').not(this).removeClass('active').find('i').removeClass('fa-caret-down').addClass('fa-caret-up');
+        $faqSection.find('.faq__list--question').not(this).removeClass('active').find('i').removeClass('fa-caret-up').addClass('fa-caret-down');
         $(this).next().slideToggle();
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
-            $(this).find('i').removeClass('fa-caret-up').addClass('fa-caret-down');
-        } else {
             $(this).find('i').removeClass('fa-caret-down').addClass('fa-caret-up');
+        } else {
+            $(this).find('i').removeClass('fa-caret-up').addClass('fa-caret-down');
         }
     });
 });
+
