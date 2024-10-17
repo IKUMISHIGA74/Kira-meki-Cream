@@ -1,3 +1,4 @@
+// スライダー
 function initializeSlick() {
     if ($('.voice__list').hasClass('slick-initialized')) {
         $('.voice__list').slick('unslick');
